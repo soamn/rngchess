@@ -23,7 +23,7 @@ Getting Started
 1.  Clone this repository to your local machine:
     
 
-`git clone` 
+`git clone https://github.com/soamn/rngchess.git` 
 
 1.  Navigate into the project folder:
     
