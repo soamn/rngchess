@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  background-color: rgb(28, 28, 28);
+}
+
+.piece-highlight {
+  background-color: aqua;
+}
+.move-highlight {
+  background-color: aqua;
+}
+
+.container {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 20px auto;
+  perspective: 1000px;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 2s ease;
+  position: relative;
+  background-color: white;
+}
+.roll {
+  animation: roll 0.5s linear;
+}
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(810deg) rotate(810deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+}
+.face * {
+  color: red;
+  background: transparent;
+}
+.front {
+  transform: rotateY(0deg) translateZ(10px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(10px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(10px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(10px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(10px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(10px);
+}
