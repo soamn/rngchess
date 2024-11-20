@@ -53,12 +53,12 @@ The client will start on [http://localhost:5173](http://localhost:5173) (or a di
 1.  Lint your code (optional):
     
 
-`   bashCopynpm run lint   `
+`   npm run lint   `
 
 1.  Preview the production build (optional):
     
 
-`   bashCopynpm run preview   `
+`   npm run preview   `
 
 Setting up the Server
 ---------------------
@@ -66,17 +66,17 @@ Setting up the Server
 1.  Navigate to the server folder:
     
 
-`   bashCopycd server   `
+`   cd server   `
 
 1.  Install dependencies:
     
 
-`   bashCopynpm install   `
+`   npm install   `
 
 1.  Start the server:
     
 
-`   bashCopynpm run start   `
+`   npm run start   `
 
 The server will compile and run the backend, ready to support the chess game.
 
